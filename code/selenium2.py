@@ -10,3 +10,12 @@ gu_list = gu_list_raw.find_elements_by_tag_name('option')
 gu_names = [option.get_attribute("value") for option in gu_list]
 gu_names.remove('')
 print(gu_names)
+
+element = driver.find_element_by_id("SIGUNGU_NM0")
+element.send_keys(gu_names[1])
+
+xpath = """//*[@id="searRgSelect"]"""
+element_sel_gu = driver.find_element_by_xpath(xpath).click()
+
+xpath = """//*[@id="glopopd_excel"]"""
+element_get_excel = driver.find_element_by_xpath(xpath).click()
