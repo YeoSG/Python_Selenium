@@ -20,4 +20,6 @@ element_sel_gu = driver.find_element_by_xpath(xpath).click()
 xpath = """//*[@id="glopopd_excel"]"""
 element_get_excel = driver.find_element_by_xpath(xpath).click()
 
+
+
 driver.close()
